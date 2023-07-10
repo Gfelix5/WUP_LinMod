@@ -66,6 +66,7 @@ The Residual standard error is 1.226, while the adjusted R-squared is 0.467.
 mydata <-data.frame(GRIP=88, ARM=104)
 predict.lm(model.1, mydata, interval="prediction")
 ```
+The value that it predicted was 1.57. It can up as low as -0.863 nad go as high as 4.022.
 
 
 #### scatterplot with model fit
