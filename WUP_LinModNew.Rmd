@@ -35,6 +35,13 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 
 ### scatterplot
 
+```{r}
+ggplot(data, aes(x = ARM, y = SIMS)) +
+  geom_point() +
+  labs(title = "SIMS and ARM", x = "ARM", y = "SIMS") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
 ### Numerical results
 
 
