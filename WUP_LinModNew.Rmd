@@ -110,7 +110,7 @@ Here we see the Residual standard error at 1.295 and the adjusted r-squared at 0
 ```{r}
 predict.lm(model.2, mydata, interval="prediction")
 ```
-
+The value that it predicted was -0.808. It can up as low as -3.384 and go as high as 1.766.
 
 #### now add the model fit to our plot for model.2
   
