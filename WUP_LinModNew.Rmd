@@ -70,9 +70,10 @@ The value that it predicted was 1.57. It can up as low as -0.863 nad go as high 
 
 
 #### scatterplot with model fit
-  
+
 
 ## Model 2 SIM~GRIP
+
 
 ### Now add in scatterplot
 
