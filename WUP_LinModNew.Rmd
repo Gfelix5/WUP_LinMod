@@ -107,6 +107,9 @@ Here we see the Residual standard error at 1.295 and the adjusted r-squared at 0
 
 #### predict model.2 at target point
 
+```{r}
+predict.lm(model.2, mydata, interval="prediction")
+```
 
 
 #### now add the model fit to our plot for model.2
