@@ -103,6 +103,7 @@ cor(SIMS~GRIP,data=data)
 model.2 <- lm(SIMS~GRIP,data=data)
 summary.lm(model.1)
 ```
+Here we see the Residual standard error at 1.295 and the adjusted r-squared at 0.4053. In this instance SIMS~ARM would rank first between the two variables.
 
 #### predict model.2 at target point
 
