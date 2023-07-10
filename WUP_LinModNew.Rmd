@@ -44,6 +44,11 @@ ggplot(data, aes(x = ARM, y = SIMS)) +
 
 ### Numerical results
 
+```{r}
+cor(SIMS~ARM,data=data)
+```
+
+
 
 ### Inferential  (Build model.1)
 
