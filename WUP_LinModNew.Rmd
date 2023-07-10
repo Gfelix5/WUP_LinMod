@@ -62,6 +62,11 @@ The Residual standard error is 1.226, while the adjusted R-squared is 0.467.
 
 #### Predict at target point
 
+```{r}
+mydata <-data.frame(GRIP=88, ARM=104)
+predict.lm(model.1, mydata, interval="prediction")
+```
+
 
 #### scatterplot with model fit
   
