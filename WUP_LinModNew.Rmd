@@ -70,6 +70,14 @@ The value that it predicted was 1.57. It can up as low as -0.863 nad go as high 
 
 
 #### scatterplot with model fit
+```{r}
+ggplot(data, aes(x = ARM, y = SIMS)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+  labs(title = "SIMS and ARM", x = "ARM", y = "SIMS") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+geom_line()
+```
 
 
 ## Model 2 SIM~GRIP
