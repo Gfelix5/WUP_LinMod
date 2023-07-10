@@ -85,7 +85,12 @@ geom_line()
 
 ### Now add in scatterplot
 
-
+```{r}
+ggplot(data, aes(x = ARM, y = SIMS)) +
+  geom_point() +
+  labs(title = "SIMS and GRIP", x = "GRIP", y = "SIMS") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
 ### Numerical results 
 
 
