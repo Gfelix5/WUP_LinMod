@@ -92,12 +92,20 @@ ggplot(data, aes(x = ARM, y = SIMS)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 ### Numerical results 
-
+```{r}
+cor(SIMS~GRIP,data=data)
+```
 
 ### Inferential  (Build model.2)
-  
+```{r}
+model.1 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.1)
+```
+Here we see the Residual standard error at 1.295 and the adjusted r-squared at 0.4053. In this instantce SIMS~ARM would rank first between the two variables.
 
 #### predict model.2 at target point
+
+
 
 #### now add the model fit to our plot for model.2
   
