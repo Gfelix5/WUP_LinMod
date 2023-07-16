@@ -114,7 +114,14 @@ The value that it predicted was -0.808. It can up as low as -3.384 and go as hig
 
 #### now add the model fit to our plot for model.2
   
-
+```{r}
+ggplot(data, aes(x = GRIP, y = SIMS)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+  labs(title = "GRIP and ARM", x = "ARM", y = "SIMS") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+geom_line()
+```
 
 ## Model 3 SIM~ARM+GRIP
 
